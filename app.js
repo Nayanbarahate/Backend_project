@@ -16,6 +16,6 @@ app.use("/api",fitRouter)
 app.use("/api",foodRouter)
 app.use("/api",homeRouter)
 
-app.listen(4001,()=>{
-    console.log("App is started");
+app.listen(process.env.PORT||4001,()=>{
+    console.log("app is running");
 })
